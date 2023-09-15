@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de precios con descuentos</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Cálculo de precios con descuentos</h1>
+    <p class="pDescripcion">Por favor, escoge un producto e ingresa el codigo de cupon</p>
+    <section class="section-container">
+        <div class="card-product">
+            <figure>
+                <img src="./images/tablet.jpg" alt="Tablet">
+            </figure>
+            <div>
+                <p>Tablet</p>
+                <p class="precio">$ 600</p>
+            </div>
+        </div>
+        <div class="card-product">
+            <figure>
+                <img src="./images/reloj.jpg" alt="Smart Watch">
+            </figure>
+            <div>
+                <p>Smart Watch</p>
+                <p class="precio">$ 200</p>
+            </div>
+        </div>
+        <div class="card-product">
+            <figure>
+                <img src="./images/auriculares.jpg" alt="Auriculares">
+            </figure>
+            <div>
+                <p>Auriculares</p>
+                <p class="precio">$ 25</p>
+            </div>
+        </div>
+    </section>
+
+    <aside id="aside-container" class="inactive">
+        <figure class="close-icon-cuadrado">
+            <img src="./icons/cerrar.png" alt="">
+        </figure>
+        <div class="producto-aside">
+            <!-- <div class="detalles-producto">
+                <figure class="producto">
+                    <img src="./images/reloj.jpg" alt="Smart watch">
+                </figure>
+                <div class="detalles">
+                    <p>Smart Watch</p>
+                    <p class="precio">$</p>
+                </div>
+                <div class="discount">
+                    <label id="code" for="code-input">Ingresa el código de descuento de tu producto:</label>
+                    <input id = "code-input" type="text">
+                </div>
+                <button class="calcular-descuento">Calcular descuento</button> 
+                <p id="result"></p>
+            </div> -->
+        </div>
+    </aside>
+    
+    <script src="./porcentaje.js"></script>
+</body>
+</html>

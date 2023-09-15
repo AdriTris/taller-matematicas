@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadistica basica</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Taller de Matemátticas con JavaScript</h1>
+    <p>Elige uno de los metodos para realizar el respectivo cálculo</p>
+    <div class="container">
+        <div class="card-promedio">
+            <p class="promedio">Promedio</p>
+        </div>
+        <div class="card-mediana">
+            <p class="mediana">Mediana</p>
+        </div>
+        <div class="card-moda">
+            <p class="moda">Moda</p>
+        </div>
+    </div>
+
+    <dialog class="modal-promedio">
+        <div class="modal-container">
+            <figure class="close-icon-promedio">
+                <img src="./icons/cerrar.png" alt="">
+            </figure>
+            <h1 class="titulo-modal">Calculo del promedio</h1>
+            <div class="div-modal-promedio">
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="promedio" for="promedio1-input">Ingresa el valor 01</label>
+                        <input id="promedio1-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="promedio" for="promedio2-input">Ingresa el valor 02</label>
+                        <input id="promedio2-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="promedio" for="promedio3-input">Ingresa el valor 03</label>
+                        <input id="promedio3-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="promedio" for="promedio4-input">Ingresa el valor 04</label>
+                        <input id="promedio4-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="promedio" for="promedio5-input">Ingresa el valor 05</label>
+                        <input id="promedio5-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="promedio" for="promedio6-input">Ingresa el valor 06</label>
+                        <input id="promedio6-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="promedio" for="promedio7-input">Ingresa el valor 07</label>
+                        <input id="promedio7-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="promedio" for="promedio8-input">Ingresa el valor 08</label>
+                        <input id="promedio8-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="promedio" for="promedio9-input">Ingresa el valor 09</label>
+                        <input id="promedio9-input" type="number">
+                    </div>
+                    <div class="div-input10">
+                        <label id="promedio" for="promedio10-input">Ingresa el valor 10</label>
+                        <input id="promedio10-input" type="number">
+                    </div>
+                </div>
+                <button class="btnCalcularPromedio">Calcular</button>
+            </div>
+            <div class="respuesta">
+                <p class="promedio-respuesta"></p>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-mediana">
+        <div class="modal-container">
+            <figure class="close-icon-mediana">
+                <img src="./icons/cerrar.png" alt="">
+            </figure>
+            <h1 class="titulo-modal">Calculo de la mediana</h1>
+            <div class="div-modal-mediana">
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="mediana" for="mediana1-input">Ingresa el valor 01</label>
+                        <input id="mediana1-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="mediana" for="mediana2-input">Ingresa el valor 02</label>
+                        <input id="mediana2-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="mediana" for="mediana3-input">Ingresa el valor 03</label>
+                        <input id="mediana3-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="mediana" for="mediana4-input">Ingresa el valor 04</label>
+                        <input id="mediana4-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="mediana" for="mediana5-input">Ingresa el valor 05</label>
+                        <input id="mediana5-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="mediana" for="mediana6-input">Ingresa el valor 06</label>
+                        <input id="mediana6-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="mediana" for="mediana7-input">Ingresa el valor 07</label>
+                        <input id="mediana7-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="mediana" for="mediana8-input">Ingresa el valor 08</label>
+                        <input id="mediana8-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="mediana" for="mediana9-input">Ingresa el valor 09</label>
+                        <input id="mediana9-input" type="number">
+                    </div>
+                    <div class="div-input10">
+                        <label id="mediana" for="mediana10-input">Ingresa el valor 10</label>
+                        <input id="mediana10-input" type="number">
+                    </div>
+                </div>
+                <button class="btnCalcularMediana">Calcular</button>
+            </div>
+            <div class="respuesta">
+                <p class="mediana-respuesta"></p>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-moda">
+        <div class="modal-container">
+            <figure class="close-icon-moda">
+                <img src="./icons/cerrar.png" alt="">
+            </figure>
+            <h1 class="titulo-modal">Calculo de la moda</h1>
+            <div class="div-modal-moda">
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="moda" for="moda1-input">Ingresa el valor 01</label>
+                        <input id="moda1-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="moda" for="moda2-input">Ingresa el valor 02</label>
+                        <input id="moda2-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="moda" for="moda3-input">Ingresa el valor 03</label>
+                        <input id="moda3-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="moda" for="moda4-input">Ingresa el valor 04</label>
+                        <input id="moda4-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="moda" for="moda5-input">Ingresa el valor 05</label>
+                        <input id="moda5-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="moda" for="moda6-input">Ingresa el valor 06</label>
+                        <input id="moda6-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="moda" for="moda7-input">Ingresa el valor 07</label>
+                        <input id="moda7-input" type="number">
+                    </div>
+                    <div class="div-input">
+                        <label id="moda" for="moda8-input">Ingresa el valor 08</label>
+                        <input id="moda8-input" type="number">
+                    </div>
+                </div>
+                <div class="input1-input2">
+                    <div class="div-input">
+                        <label id="moda" for="moda9-input">Ingresa el valor 09</label>
+                        <input id="moda9-input" type="number">
+                    </div>
+                    <div class="div-input10">
+                        <label id="moda" for="moda10-input">Ingresa el valor 10</label>
+                        <input id="moda10-input" type="number">
+                    </div>
+                </div>
+                <button class="btnCalcularModa">Calcular</button>
+            </div>
+            <div class="respuesta">
+                <p class="moda-respuesta"></p>
+            </div>
+            
+        </div>
+    </dialog>
+
+    <script src="./estadistica.js"></script>
+</body>
+</html>

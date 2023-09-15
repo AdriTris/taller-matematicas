@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Matemátticas JS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Taller de Matemáticas con JavaScript</h1>
+    <p class="pDescripcion">Por favor, escoge una figura para calcular su área y perímetro</p>
+    <div class="container">
+        <div class="card-cuadrado">
+            <p class="cuadrado">Cuadrado</p>
+        </div>
+        <div class="card-triangulo">
+            <p class="triangulo">Triángulo</p>
+        </div>
+        <div class="card-circunferencia">
+            <p class="circunferencia">Circunferencia</p>
+        </div>
+    </div>
+
+    <dialog class="modal-cuadrado">
+        <div class="modal-container">
+            <figure class="close-icon-cuadrado">
+                <img src="./icons/cerrar.png" alt="">
+            </figure>
+            <div class="div-modal">
+                <label id="lado-cuadrado" for="lado-cuadrado-input">Ingresa el lado del Cuadrado</label>
+                <input id="lado-cuadrado-input" type="number">
+                <button class="btnCalcularCuadrado">Calcular</button>
+            </div>
+            <div class="respuesta">
+                <p class="area-cuadrado"></p>
+                <p class="perimetro-cuadrado"></p>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-triangulo">
+        <div class="modal-container">
+            <figure class="close-icon-triangulo">
+                <img src="./icons/cerrar.png" alt="">
+            </figure>
+            <div class="div-modal-triangulo">
+                <div class="div-input">
+                    <label id="lado1-triangulo" for="lado1-triangulo-input">Ingresa el lado 1 del triángulo</label>
+                    <input id="lado1-triangulo-input" type="number">
+                </div>
+                <div class="div-input">
+                    <label id="lado2-triangulo" for="lado2-triangulo-input">Ingresa el lado 2 del triángulo</label>
+                    <input id="lado2-triangulo-input" type="number">
+                </div>
+                <div class="div-input">
+                    <label id="lado3-triangulo" for="lado3-triangulo-input">Ingresa la base del triángulo </label>
+                    <input id="lado3-triangulo-input" type="number">
+                </div>
+                <button class="btnCalcularTriangulo">Calcular</button>
+            </div>
+            <div class="respuesta">
+                <p class="area-triangulo"></p>
+                <p class="perimetro-triangulo"></p>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-circunferencia">
+        <div class="modal-container">
+            <figure class="close-icon-cicunferencia">
+                <img src="./icons/cerrar.png" alt="">
+            </figure>
+            <div class="div-modal">
+                <label id="lado-cicunferencia" for="radio-cicunferencia-input">Ingresa el radio de la Circunferencia</label>
+                <input id="radio-cicunferencia-input" type="number">
+                <button class="btnCalcularCircunferencia">Calcular</button>
+            </div>
+            <div class="respuesta">
+                <p class="area-circunferencia"></p>
+                <p class="perimetro-circunferencia"></p>
+            </div>
+            
+        </div>
+    </dialog>
+
+    <script src="./math.js"></script>
+</body>
+</html>
